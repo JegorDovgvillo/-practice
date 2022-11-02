@@ -1,11 +1,11 @@
-let number = 5;
-const camelCase = 1;
-
-number = 10; 
-console.log(number);
-
-const obj = {
-    a: 50 
+const numberOfFilms = +prompt('Сколько фильмов посмотрели?', '');
+const personalMovieDB = {
+count: numberOfFilms,
+movies: {},
+actors: {},
+genres: [],
+privat: false
 };
-obj.a = 10;
-console.log(obj.a);
+const lastMovies = prompt('Последний фильм?', '');
+const moviesGrade = +prompt('На сколько оцените?', '');
+personalMovieDB.movies[lastMovies] = moviesGrade;
