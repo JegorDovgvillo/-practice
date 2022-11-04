@@ -155,23 +155,23 @@
 //     }
 // }
 // detectPersonalLevel();
-// let numberOfFilms;
-// const personalMovieDB = {
-//     count: numberOfFilms,
-//     movies: {},
-//     actors: {},
-//     genres: [],
-//     privat: false
-// };
-// function showMyDB(hidden) {
-//     if (!hidden) {
-//         console.log(personalMovieDB);
-//     }
-// }
-// showMyDB(personalMovieDB.privat);
-// function writeYourGenres() {
-//     for(let i = 1; i < 4; i++) {
-//         let a = prompt(`Ваш любимый жанр под номером ${i}?`);
-//         personalMovieDB.genres[i - 1] = a;
-//     }
-// }
+let numberOfFilms;
+const personalMovieDB = {
+    count: numberOfFilms,
+    movies: {},
+    actors: {},
+    genres: [],
+    privat: false
+};
+function showMyDB(hidden) {
+    if (!hidden) {
+        console.log(personalMovieDB);
+    }
+}
+showMyDB(personalMovieDB.privat);
+function writeYourGenres() {
+    for(let i = 1; i < 4; i++) {
+        let a = prompt(`Ваш любимый жанр под номером ${i}?`);
+        personalMovieDB.genres[i - 1] = a;
+    }
+}
